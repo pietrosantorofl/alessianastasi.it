@@ -21,7 +21,7 @@ document.querySelectorAll("[data-year]").forEach(function (el) {
 // Con FORM_ENDPOINT vuoto, il modulo prepara l'email nel programma di posta.
 (function () {
   var CONTACT_EMAIL = "alessia.nastasi.psi@gmail.com";
-  var FORM_ENDPOINT = "";
+  var FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycby-dZrGv8TRJ7kvvHl1pOZyxOhpfr1nb4xbpo2cRx9IUboOQBIXWxZKzYQTUz65M7PqSQ/exec";
   var form = document.getElementById("contact-form");
   if (!form) return;
   var msg = document.getElementById("form-msg");
