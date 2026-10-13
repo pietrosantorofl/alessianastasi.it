@@ -428,3 +428,17 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; }
   font-size: 1.15rem; font-weight: 600; letter-spacing: 0;
   line-height: 1.5; max-width: 34ch; margin-bottom: 1.6rem;
 }
+
+/* Poesia completa */
+.poem { text-align: center; }
+.poem-figure { margin: 0 auto; max-width: 30ch; }
+.poem-figure blockquote { margin: 0; }
+.poem-figure p {
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem); font-style: italic; font-weight: 300;
+  line-height: 1.55; margin: 0;
+}
+.poem-figure figcaption {
+  margin-top: 1.4rem; font-size: 0.8rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--slate-2);
+}
+.hero-quote cite, .poem-figure cite { font-style: normal; }
