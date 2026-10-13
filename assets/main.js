@@ -19,7 +19,7 @@ document.querySelectorAll("[data-year]").forEach(function (el) {
 // di chi scrive, senza inviare dati a servizi terzi.
 // Per cambiare indirizzo, modificare CONTACT_EMAIL.
 (function () {
-  var CONTACT_EMAIL = "ales.nastasi@gmail.com";
+  var CONTACT_EMAIL = "alessia.nastasi.psi@gmail.com";
   var form = document.getElementById("contact-form");
   if (!form) return;
 
