@@ -295,7 +295,9 @@ p { margin: 0 0 1.1em; }
 .faq details p { margin: 14px 0 0; }
 
 /* Contatti e form */
-.contact-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: start; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: stretch; }
+.contact-grid > div { display: flex; flex-direction: column; }
+.contact-grid > div > .info-block:last-child { margin-bottom: 0; }
 @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
 
 .info-block { margin-bottom: 28px; }
@@ -324,17 +326,28 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; }
 .checkbox input { margin-top: 5px; }
 .form-msg { margin-top: 16px; font-size: 0.95rem; }
 
-/* Mappa: link esterno, nessun embed (niente cookie di terze parti) */
+/* Mappa: immagine statica (OpenStreetMap), nessun embed né cookie di terze parti */
 .map-card {
-  display: block; text-decoration: none;
+  display: flex; flex-direction: column; flex: 1 1 auto; min-height: 260px;
   border-radius: 10px; overflow: hidden; border: 1px solid var(--line);
-  background: var(--mist-2);
+  background: var(--mist-2); margin-bottom: 28px;
 }
-.map-card svg { width: 100%; height: auto; }
-.map-card span {
-  display: block; padding: 14px 18px; font-size: 0.9rem; background: var(--cream);
+.map-link { position: relative; display: block; flex: 1 1 auto; min-height: 220px; }
+.map-link img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 55% 44.3%; /* stesso punto del segnaposto */
+  filter: sepia(0.35) saturate(0.85);
 }
-.map-card:hover span { text-decoration: underline; }
+.map-pin {
+  position: absolute; width: 18px; height: 18px; margin: -9px 0 0 -9px;
+  border-radius: 50%; background: var(--slate); border: 3px solid var(--cream);
+  box-shadow: 0 0 0 8px rgba(222, 157, 79, 0.35);
+}
+.map-foot {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  padding: 12px 16px; background: var(--cream); font-size: 0.9rem;
+}
+.map-foot small { font-size: 0.72rem; color: var(--slate-2); }
 
 /* ---------- CTA ---------- */
 .cta { text-align: center; }
