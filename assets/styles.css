@@ -420,7 +420,7 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; }
 }
 
 /* Citazione nell'hero */
-.hero-quote { margin: 0 0 2rem; }
+.hero-quote { margin: 0 0 1.8rem; }
 .hero-quote blockquote { margin: 0; }
 .hero-quote p {
   font-size: clamp(1.45rem, 2.6vw, 2.15rem);
@@ -436,8 +436,21 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; }
 }
 .hero-quote figcaption::before { content: "— "; }
 .hero-title {
-  font-size: 1.15rem; font-weight: 600; letter-spacing: 0;
-  line-height: 1.5; max-width: 34ch; margin-bottom: 1.6rem;
+  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase;
+  line-height: 1.5; color: var(--slate-2);
+  margin: 0 0 1.4rem; padding-top: 1.4rem;
+  border-top: 1px solid var(--line); max-width: 30rem;
 }
 
 .hero-quote cite { font-style: normal; }
+
+/* Foto dello studio */
+.studio-photo { position: relative; margin: 0; border-radius: 10px; overflow: hidden; background: var(--sand); aspect-ratio: 3 / 2; }
+.studio-photo img { width: 100%; height: 100%; object-fit: cover; }
+.studio-photo-empty { display: none; }
+.studio-photo.is-empty img { display: none; }
+.studio-photo.is-empty .studio-photo-empty {
+  display: flex; position: absolute; inset: 0; align-items: center; justify-content: center;
+  font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--slate-2);
+}
+.cta h2 { margin-bottom: 0.8em; }
