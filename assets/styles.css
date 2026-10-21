@@ -504,3 +504,5 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; }
 .hero-centered .hero-quote { margin-bottom: 0; }
 .bg-slate .list-clean strong { color: var(--sage); font-weight: 600; }
 .list-clean strong { font-weight: 600; }
+/* Separa il footer da una sezione scura che lo precede */
+.site-footer { border-top: 1px solid rgba(251, 246, 236, 0.14); }
