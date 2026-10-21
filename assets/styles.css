@@ -495,3 +495,10 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; }
 .intro-text { margin-inline: auto; text-align: center; }
 .intro-text p { font-size: 1.15rem; font-weight: 300; line-height: 1.8; }
 .intro-text p:last-child { margin-bottom: 0; }
+
+/* Testo per lettori di schermo e motori di ricerca, non visibile */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.hero-centered .hero-quote { margin-bottom: 0; }
