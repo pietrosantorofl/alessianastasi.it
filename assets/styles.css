@@ -456,6 +456,12 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; }
 }
 
 .hero-quote cite { font-style: normal; }
+/* Poesia centrata nella sua colonna: righe di lunghezza diversa in equilibrio */
+.hero-text { text-align: center; }
+.hero-text .hero-quote p { font-size: clamp(1.5rem, 2.5vw, 2.3rem); line-height: 1.38; }
+.hero-text .hero-quote figcaption { max-width: 44ch; margin-inline: auto; }
+.hero-text .hero-title { margin-inline: auto; max-width: 26rem; margin-bottom: 1.6rem; }
+.hero-text .hero-actions { justify-content: center; }
 
 /* Foto dello studio */
 .studio-photo { position: relative; margin: 0; border-radius: 10px; overflow: hidden; background: var(--sand); aspect-ratio: 3 / 2; }
