@@ -483,3 +483,10 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; }
 }
 .btn-wa:hover { background: #17733e; border-color: #17733e; }
 .wa-icon { width: 18px; height: 18px; flex: none; }
+
+/* Hero della home: solo citazione, tutto centrato */
+.hero-centered { grid-template-columns: 1fr !important; justify-items: center; padding: 110px 0 130px; }
+.hero-centered .hero-text { max-width: 1080px; }
+.hero-centered .hero-quote figcaption { max-width: none; }
+.hero-centered .hero-quote p { font-size: clamp(1.2rem, 1.9vw, 1.6rem); line-height: 1.6; }
+@media (max-width: 860px) { .hero-centered { padding: 64px 0 96px; } }
