@@ -506,3 +506,4 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 20px; }
 .list-clean strong { font-weight: 600; }
 /* Separa il footer da una sezione scura che lo precede */
 .site-footer { border-top: 1px solid rgba(251, 246, 236, 0.14); }
+.intro-text strong { font-weight: 600; }
